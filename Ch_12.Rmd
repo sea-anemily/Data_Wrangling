@@ -1,0 +1,41 @@
+---
+title: "Ch12"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+```{r}
+library(tidyverse)
+```
+## Ch 12
+
+## 12.2.1
+1. variables are in the vertical columns, observations are in the horizontal rows, and values are in each of the cells.
+```
+mutate(rate = cases/population * 1000)
+```
+3. library(ggplot2)
+  ggplot(table 2, aes(year, type)) +
+  geom_line(aes(group = country), color = "grey50")+
+  geom_point(aes(color = country))
+  
+## 12.3.3
+1. they are not perfectly symmetrical because collumns are being combined or seperated 
+2. the code fails because they didn't put the years in quotes. the years 1999 and 2000 are variables not numeric values
+3. if you were to widen the table your collumns would be name, age, and height
+it could be longer by changing it to pregnant , sex, age
+
+## 12.4.3
+1. extra will drop any extra values
+  fill will fill gaps with values on the right
+2. remove will remove an input column from output data frame
+
+
+## 12.5.1
+1. they both have list of values to be used in place of any missing values. pivot_wider says it is optional and complete is specifically replacing NA
+2.
+
+## 12.6.1
+1. 
